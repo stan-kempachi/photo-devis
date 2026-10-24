@@ -1,0 +1,25 @@
+# ============================================================================
+# Photo → Devis Requirements
+# Python 3.12+ (tested on 3.13)
+# ============================================================================
+
+# No external dependencies required!
+# All modules used are Python standard library:
+#   - imaplib        (Gmail IMAP)
+#   - smtplib        (Email SMTP)
+#   - email.mime.*   (Email formatting)
+#   - socket         (IPv4/IPv6 networking)
+#   - logging        (Logging)
+#   - json           (JSON parsing)
+#   - os, sys, time  (Utilities)
+
+# This file is empty because all dependencies are stdlib.
+# This ensures maximum compatibility and security.
+
+# Optional: For development/testing only
+# pytest>=7.0
+# python-dotenv>=1.0.0
+
+# Installation:
+# pip3 install --break-system-packages -r requirements.txt
+# (or just 'pip3 install' if nothing to install)

@@ -1,0 +1,19 @@
+[Unit]
+OnFailure=karakuri-notify-failure@%n.service
+Description=Photo vers Devis
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=standev
+WorkingDirectory=/opt/photo-devis
+EnvironmentFile=/opt/photo-devis/.env
+ExecStart=/usr/bin/python3 -u /opt/photo-devis/scripts/photo_to_devis_production.py
+StandardOutput=append:/opt/photo-devis/polling.log
+StandardError=append:/opt/photo-devis/polling.log
+Restart=always
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target

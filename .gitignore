@@ -1,0 +1,29 @@
+# Secrets
+.env
+.env.*
+!.env.example
+.secrets/
+*.key
+*.pem
+
+# Données clients / état local
+devis_outputs/
+.processed_emails
+.email_processed_hashes
+.last_uid
+
+# Logs
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Dépôt séparé (stan-kempachi/karakuri-studio), cloné ici pour les services du Pi
+karakuri-content/
+
+# Anciennes versions conservées localement, hors git
+_archive_legacy/
