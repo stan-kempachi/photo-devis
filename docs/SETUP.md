@@ -4,7 +4,7 @@
 
 ```bash
 export GMAIL_APP_PASSWORD="your_app_password"
-python3 scripts/email_to_devis_bridge.py
+python3 scripts/photo_to_devis_production.py
 ```
 
 ## Webhook Direct

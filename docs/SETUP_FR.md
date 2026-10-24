@@ -19,7 +19,7 @@
 export GMAIL_APP_PASSWORD="xxxx xxxx xxxx xxxx"
 
 # Lance le script
-python3 scripts/email_to_devis_bridge.py
+python3 scripts/photo_to_devis_production.py
 ```
 
 Tu devrais voir:
@@ -54,7 +54,7 @@ Tu devrais voir:
 ```bash
 screen -S email_devis
 export GMAIL_APP_PASSWORD="..."
-python3 scripts/email_to_devis_bridge.py
+python3 scripts/photo_to_devis_production.py
 # Ctrl+A puis D pour détacher
 ```
 
@@ -70,7 +70,7 @@ Type=simple
 User=photodevis
 WorkingDirectory=/opt/photo-devis
 Environment="GMAIL_APP_PASSWORD=xxxx_xxxx_xxxx_xxxx"
-ExecStart=/usr/bin/python3 scripts/email_to_devis_bridge.py
+ExecStart=/usr/bin/python3 scripts/photo_to_devis_production.py
 Restart=always
 RestartSec=10
 
